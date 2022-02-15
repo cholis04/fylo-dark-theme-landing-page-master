@@ -1,0 +1,9 @@
+$primary-color: orange;
+
+body {
+  background-color: $primary-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+}
