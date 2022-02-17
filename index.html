@@ -27,19 +27,23 @@
 <body>
 
   <!-- Navbar -->
-  <nav>
-    <div class="nav-wrapper">
+  <nav class="navtop">
+    <div class="navtop__wrapper">
 
-      <img src="./images/logo.svg" alt="Fylo Logo" title="Fylo Logo" />
-      <ul>
-        <li>
-          <a href="#">Features</a>
+      <div class="navtop__brand">
+        <a href="./" class="navtop__homelink">
+          <img src="./images/logo.svg" alt="Fylo Logo" title="Fylo Logo" class="navtop__logobrand" />
+        </a>
+      </div>
+      <ul class="navtop__menu">
+        <li class="navtop__menu-item">
+          <a href="#" class="navtop__link">Features</a>
         </li>
-        <li>
-          <a href="#">Team</a>
+        <li class="navtop__menu-item">
+          <a href="#" class="navtop__link">Team</a>
         </li>
-        <li>
-          <a href="#">Sign In</a>
+        <li class="navtop__menu-item">
+          <a href="#" class="navtop__link">Sign In</a>
         </li>
       </ul>
 
@@ -47,62 +51,66 @@
   </nav>
 
   <!-- Main Content -->
-  <main>
-    <div class="main-wrapper">
+  <main class="main">
+    <div class="main__wrapper">
 
       <div class="image-wrapper">
-        <img src="./images/decorations/illustration-intro.png" alt="Illustration Intro" title="Illustration Intro" />
+        <img src="./images/decorations/illustration-intro.png" alt="Illustration Intro" title="Illustration Intro"
+          class="image-wrapper__img" />
       </div>
 
-      <h1>All your files in one secure location, accessible anywhere.</h1>
+      <h1 class="main__title">All your files in one secure location, accessible anywhere.</h1>
 
-      <p>
+      <p class="main__paragraph">
         Fylo stores all your most important files in one secure location. Access them wherever
         you need, share and collaborate with friends family, and co-workers.
       </p>
 
-      <div class="action">
+      <div class="main__action">
         <a href="#" class="button-link">Get Started</a>
       </div>
 
       <!-- Features -->
-      <section aria-label="features">
-        <div class="feature-list">
+      <section class="feature" aria-label="features">
+        <div class="feature__list">
           <div class="image-wrapper">
-            <img src="./images/icons/icon-access-anywhere.svg" alt="" title="Access Anywhere" />
+            <img src="./images/icons/icon-access-anywhere.svg" alt="" title="Access Anywhere"
+              class="image-wrapper__img" />
           </div>
-          <p>Access your files, anywhere</p>
-          <p>
+          <p class="feature__title">Access your files, anywhere</p>
+          <p class="feature__paragraph">
             The ability to use a smartphone, tablet, or computer to access your account means your
             files follow you everywhere.
           </p>
         </div>
-        <div class="feature-list">
+        <div class="feature__list">
           <div class="image-wrapper">
-            <img src="./images/icons/icon-security.svg" alt="" title="Security you can trust" />
+            <img src="./images/icons/icon-security.svg" alt="" title="Security you can trust"
+              class="image-wrapper__img" />
           </div>
-          <p>Security you can trust</p>
-          <p>
+          <p class="feature__title">Security you can trust</p>
+          <p class="feature__paragraph">
             2-factor authentication and user-controlled encryption are just a couple of the security
             features we allow to help secure your files.
           </p>
         </div>
-        <div class="feature-list">
+        <div class="feature__list">
           <div class="image-wrapper">
-            <img src="./images/icons/icon-collaboration.svg" alt="" title="Real Time Collaboration" />
+            <img src="./images/icons/icon-collaboration.svg" alt="" title="Real Time Collaboration"
+              class="image-wrapper__img" />
           </div>
-          <p>Real-time collaboration</p>
-          <p>
+          <p class="feature__title">Real-time collaboration</p>
+          <p class="feature__paragraph">
             Securely share files and folders with friends, family and colleagues for live collaboration. No email
             attachments required.
           </p>
         </div>
-        <div class="feature-list">
+        <div class="feature__list">
           <div class="image-wrapper">
-            <img src="./images/icons/icon-any-file.svg" alt="" title="Any type of File" />
+            <img src="./images/icons/icon-any-file.svg" alt="" title="Any type of File" class="image-wrapper__img" />
           </div>
-          <p>Store any type of file</p>
-          <p>
+          <p class="feature__title">Store any type of file</p>
+          <p class="feature__paragraph">
             Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types
             to be securely stored and shared.
           </p>
@@ -110,23 +118,23 @@
       </section>
 
       <!-- How it Works -->
-      <section aria-label="How it works">
+      <section class="works" aria-label="How it works">
         <div class="image-wrapper">
           <img src="./images/decorations/illustration-stay-productive.png" alt="Stay Productive"
-            title="Illustration Stay Productive" />
+            title="Illustration Stay Productive" class="image-wrapper__img" />
         </div>
-        <article>
-          <h2>Stay productive, wherever you are</h2>
-          <p>
+        <article class="works__article">
+          <h2 class="works__title">Stay productive, wherever you are</h2>
+          <p class="works__paragraph">
             Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage
             needs.
           </p>
-          <p>
+          <p class="works__paragraph">
             Securely share files and folders with friends, family and colleagues for live collaboration. No email
             attachments required.
           </p>
-          <p>
-            <a href="#">See how Fylo works</a>
+          <p class="works__paragraph">
+            <a href="#" class="works__links">See how Fylo works</a>
           </p>
         </article>
       </section>
@@ -136,19 +144,19 @@
 
 
   <!-- Aside Reviews -->
-  <aside aria-label="reviews">
-    <div class="aside-wrapper">
+  <aside class="aside" aria-label="reviews">
+    <div class="aside__wrapper">
 
       <div class="card">
         <p>
           Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
           become a well-oiled collaboration machine.
         </p>
-        <div class="footer-card">
-          <img src="./images/photos/profile-1.jpg" alt="Satish Patel" title="Satish Patel" />
-          <div class="profile-info">
-            <p class="name">Satish Patel</p>
-            <p class="position">Founder & CEO, Huddle
+        <div class="card__footer">
+          <img src="./images/photos/profile-1.jpg" alt="Satish Patel" title="Satish Patel" class="card__avatar" />
+          <div class="card__profile">
+            <p class="card__name">Satish Patel</p>
+            <p class="card__possition">Founder & CEO, Huddle
             </p>
           </div>
         </div>
@@ -158,11 +166,11 @@
           Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
           become a well-oiled collaboration machine.
         </p>
-        <div class="footer-card">
-          <img src="./images/photos/profile-2.jpg" alt="Bruce McKenzie" title="Bruce McKenzie" />
-          <div class="profile-info">
-            <p class="name">Bruce McKenzie</p>
-            <p class="position">Founder & CEO, Huddle
+        <div class="card__footer">
+          <img src="./images/photos/profile-2.jpg" alt="Bruce McKenzie" title="Bruce McKenzie" class="card__avatar" />
+          <div class="card__profile">
+            <p class="card__name">Bruce McKenzie</p>
+            <p class="card__position">Founder & CEO, Huddle
             </p>
           </div>
         </div>
@@ -172,11 +180,11 @@
           Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
           become a well-oiled collaboration machine.
         </p>
-        <div class="footer-card">
-          <img src="./images/photos/profile-3.jpg" alt="Iva Boyd" title="Iva Boyd" />
-          <div class="profile-info">
-            <p class="name">Iva Boyd</p>
-            <p class="position">Founder & CEO, Huddle
+        <div class="card__footer">
+          <img src="./images/photos/profile-3.jpg" alt="Iva Boyd" title="Iva Boyd" class="card__avatar" />
+          <div class="card__profile">
+            <p class="card__name">Iva Boyd</p>
+            <p class="card__position">Founder & CEO, Huddle
             </p>
           </div>
         </div>
@@ -187,113 +195,138 @@
 
 
   <!-- Footer -->
-  <footer>
-    <div class="footer-wrapper">
+  <footer class="footer">
+    <div class="footer__wrapper">
 
       <!-- Sign Up -->
-      <section aria-label="Sign up">
-        <h2>Get early access today</h2>
-        <p>
+      <section class="signup" aria-label="Sign up">
+        <h2 class="signup__title">Get early access today</h2>
+        <p class="signup__paragraph">
           It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions,
           our support team would be happy to help you.
         </p>
-        <form>
-          <div class="input-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required placeholder="email@example.com" />
+        <form class="signup__form" name="signup">
+          <div class="signup__input-group">
+            <label class="signup__label-email" for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="email@example.com"
+              class="signup__input-email" />
           </div>
-          <div class="input-group">
-            <button>Get Started For Free</button>
+          <div class="signup__input-group">
+            <button class="signup__button-submit">Get Started For Free</button>
           </div>
         </form>
       </section>
 
       <!-- Logo -->
       <div class="image-wrapper">
-        <img src="./images/logo.svg" alt="Fylo Logo" title="Fylo Logo" />
+        <img src="./images/logo.svg" alt="Fylo Logo" title="Fylo Logo" class="image-wrapper__img" />
       </div>
 
       <!-- Contact -->
       <div class="contact">
-        <section aria-label="Location">
+
+        <section class="location" aria-label="Location">
           <div class="box-contact">
-            <img src="./images/icons/icon-location.svg" alt="" title="Our Location" />
-            <p>
+            <img src="./images/icons/icon-location.svg" alt="" title="Our Location" class="box-contact__icon" />
+            <p class="box-contact__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua
             </p>
           </div>
         </section>
-        <section aria-label="Contact us">
+        <section class="contact-us" aria-label="Contact us">
           <div class="box-contact">
-            <img src="./images/icons/icon-phone.svg" alt="" title="Phone Number" />
-            <p>
+            <img src="./images/icons/icon-phone.svg" alt="" title="Phone Number" class="box-contact__icon" />
+            <p class="box-contact__text">
               +1-543-123-4567
             </p>
           </div>
           <div class="box-contact">
-            <img src="./images/icons/icon-email.svg" alt="" title="Email" />
-            <p>
+            <img src="./images/icons/icon-email.svg" alt="" title="Email" class="box-contact__icon" />
+            <p class="box-contact__text">
               example@fylo.com
             </p>
           </div>
         </section>
-        <nav aria-label="Footer Navigation">
-          <ul>
-            <li>
-              <a href="#">About Us</a>
+        <nav class="navfooter" aria-label="Footer Navigation">
+          <ul class="navfooter__menu">
+            <li class="navfooter__menu-item">
+              <a href="#" class="navfooter__link">About Us</a>
             </li>
-            <li>
-              <a href="#">Jobs</a>
+            <li class="navfooter__menu-item">
+              <a href="#" class="navfooter__link">Jobs</a>
             </li>
-            <li>
-              <a href="#">Press</a>
+            <li class="navfooter__menu-item">
+              <a href="#" class="navfooter__link">Press</a>
             </li>
-            <li>
-              <a href="#">Blog</a>
-            </li>
-          </ul>
-        </nav>
-        <nav aria-label="Information Navigation">
-          <ul>
-            <li>
-              <a href="#">Contact Us</a>
-            </li>
-            <li>
-              <a href="#">Terms</a>
-            </li>
-            <li>
-              <a href="#">Privacy</a>
+            <li class="navfooter__menu-item">
+              <a href="#" class="navfooter__link">Blog</a>
             </li>
           </ul>
         </nav>
-        <nav aria-label="Social Links">
-          <ul>
-            <li>
-              <a href="#">
-                <img src="./images/socials/facebook.svg" alt="Facebook" title="Facebook" />
+        <nav class="navinfo" aria-label="Information Navigation">
+          <ul class="navinfo__menu">
+            <li class="navinfo__menu-item">
+              <a href="#" class="navinfo__link">Contact Us</a>
+            </li>
+            <li class="navinfo__menu-item">
+              <a href="#" class="navinfo__link">Terms</a>
+            </li>
+            <li class="navinfo__menu-item">
+              <a href="#" class="navinfo__link">Privacy</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="navsocial" aria-label="Social Links">
+          <ul class="navsocial__menu">
+            <li class="navsocial__menu-item">
+              <a href="#" class="navsocial__link">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3333 3333" shape-rendering="geometricPrecision"
+                  text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
+                  clip-rule="evenodd" class="navsocial__link-icon">
+                  <path d=" M1667 0c460 0 877 187 1179 488 302 302 488 718 488 1179 0 460-187 877-488 1179-302 302-718
+                  488-1179 488-460 0-877-187-1179-488C186 2544 0 2128 0 1667c0-460 187-877 488-1179C790 186 1206 0 1667
+                  0zm181 1137h301V776h-301c-232 0-421 189-421
+                  421v181h-241v361h241v963h361v-963h301l60-361h-361v-181c0-33 28-60
+                  60-60zm913-563c-280-280-666-453-1093-453S854 294 575 574c-280 280-453 666-453 1093s173 814 453
+                  1093c280 280 666 453 1093 453s814-173 1093-453c280-280 453-666 453-1093s-173-814-453-1093z"
+                    fill-rule="nonzero" />
+                </svg>
               </a>
             </li>
-            <li>
-              <a href="#">
-                <img src="./images/socials/instagram.svg" alt="Instagram" title="Instagram" />
+            <li class="navsocial__menu-item">
+              <a href="#" class="navsocial__link">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3333 3333" shape-rendering="geometricPrecision"
+                  text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
+                  clip-rule="evenodd" class="navsocial__link-icon">
+                  <path
+                    d="M1662 1174c285 0 516 231 516 516s-231 516-516 516-516-231-516-516 231-516 516-516zm-385-421h780c293 0 532 237 532 525v778c0 289-239 525-532 525h-780c-293 0-532-236-532-525v-778c0-289 240-525 532-525zm884 349c46 0 84 37 84 84 0 46-37 84-84 84-46 0-84-37-84-84 0-46 37-84 84-84zm-820-200h652c245 0 445 199 445 443v656c0 244-200 443-445 443h-652c-245 0-445-199-445-443v-656c0-244 200-443 445-443zM1667 0c460 0 877 187 1179 488 302 302 488 718 488 1179 0 460-187 877-488 1179-302 302-718 488-1179 488-460 0-877-187-1179-488C186 2544 0 2128 0 1667c0-460 187-877 488-1179C790 186 1206 0 1667 0zm1093 573c-280-280-666-453-1093-453S853 293 574 573c-280 280-453 666-453 1093s173 814 453 1093c280 280 666 453 1093 453s814-173 1093-453c280-280 453-666 453-1093s-173-814-453-1093zm-1098 774c188 0 341 153 341 341s-153 341-341 341c-189 0-341-153-341-341s153-341 341-341z" />
+                </svg>
               </a>
             </li>
-            <li>
-              <a href="#">
-                <img src="./images/socials/twitter.svg" alt="Twitter" title="Twitter" />
+            <li class="navsocial__menu-item">
+              <a href="#" class="navsocial__link">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3333 3333" shape-rendering="geometricPrecision"
+                  text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
+                  clip-rule="evenodd" class="navsocial__link-icon">
+                  <path
+                    d="M1667 0c460 0 877 187 1179 488 302 302 488 718 488 1179 0 460-187 877-488 1179-302 302-718 488-1179 488-460 0-877-187-1179-488C186 2544 0 2128 0 1667c0-460 187-877 488-1179C790 186 1206 0 1667 0zm867 1129c-64 29-132 47-204 56 74-44 130-114 157-197-69 41-145 70-226 86-65-69-157-112-260-112-197 0-356 159-356 356 0 28 3 55 9 81-296-15-558-157-733-372-31 54-48 116-48 179 0 123 63 232 158 296-58-2-113-18-161-44v4c0 172 123 316 286 349-30 8-61 13-94 13-23 0-45-2-67-6 46 141 177 244 332 247-122 96-275 152-442 152-29 0-57-2-85-5 158 101 345 160 546 160 654 0 1013-542 1013-1013 0-16 0-31-1-46 70-50 130-112 177-184zm226-555c-280-280-666-453-1093-453S853 294 574 574c-280 280-453 666-453 1093s173 814 453 1093c280 280 666 453 1093 453s814-173 1093-453c280-280 453-666 453-1093s-173-814-453-1093z"
+                    fill-rule="nonzero" />
+                </svg>
               </a>
             </li>
           </ul>
         </nav>
+
       </div>
 
       <!-- Attribution -->
-      <section aria-label="Attribution">
-        <p class="attribution">
-          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-            rel="noopener noreferrer">Frontend Mentor</a>.
-          Coded by <a href="https://github.com/cholis04" target="_blank" rel="noopener noreferrer">cholis04</a>.
+      <section class="attribution" aria-label="Attribution">
+        <p class="attribution__paragraph">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer"
+            class="attribution__link">Frontend Mentor</a>.
+          Coded by <a href="https://github.com/cholis04" target="_blank" rel="noopener noreferrer"
+            class="attribution__link">cholis04</a>.
         </p>
       </section>
 
