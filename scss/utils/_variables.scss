@@ -1,6 +1,22 @@
 // Primary Colors
-$mainBackground: hsl(218, 28%, 13%);
+$colorIntroBackground: hsl(217, 28%, 15%);
+$colorSignupBackground: hsl(217, 28%, 15%);
+$colorMainBackground: hsl(218, 28%, 13%);
+$colorFooterBackground: hsl(216, 53%, 9%);
+$colorTestimonialBackground: hsl(219, 30%, 18%);
+
+// Accent Colors
+$colorButtonCTA: linear-gradient(hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+$colorErrorInput: hsl(0, 100%, 63%);
+$colorNeutral: hsl(0, 0%, 100%);
 
 // Layout Size :
 $maxDesktopWidth: 1440px;
 $minMobileWidth: 375px;
+
+// Font Size
+$bodyText: 14px;
+
+// Font Familty:
+$fontRaleway: 'Raleway', sans-serif;
+$fontOpenSans: 'Open Sans', sans-serif;

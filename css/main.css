@@ -15,11 +15,12 @@ body {
 }
 
 img {
+  display: block;
   max-width: 100%;
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 14px;
 }
 

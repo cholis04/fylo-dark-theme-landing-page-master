@@ -1,13 +1,12 @@
+@use '../utils/variables' as var;
+
 // Raleway
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
 
 // Open Sans
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
 
-// font-family: 'Raleway', sans-serif;
-// font-family: 'Open Sans', sans-serif;
-
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
+  font-family: var.$fontRaleway;
+  font-size: var.$bodyText;
 }
