@@ -1,0 +1,37 @@
+@use './variables' as var;
+
+// Wrapper
+@mixin wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: var.$maxDesktopWidth;
+  min-width: var.$minMobileWidth;
+  padding: 0 1.5em;
+}
+
+// Flex Parent
+@mixin flex($justify-content: center, $align-items: center, $direction: row) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: $justify-content;
+  -ms-flex-pack: $justify-content;
+  justify-content: $justify-content;
+  -webkit-box-align: $align-items;
+  -ms-flex-align: $align-items;
+  align-items: $align-items;
+
+  @if $direction == column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: $direction;
+    flex-direction: $direction;
+  } @else if $direction == row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: $direction;
+    flex-direction: $direction;
+  } @else {
+    @error "Unknown direction #{$direction}.";
+  }
+}

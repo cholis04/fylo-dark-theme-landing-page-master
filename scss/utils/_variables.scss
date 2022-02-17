@@ -1,3 +1,7 @@
+// Breakpoints Media Query
+$mobileBreakpoint: 420px;
+$tabletBreakpoint: 820px;
+
 // Primary Colors
 $colorIntroBackground: hsl(217, 28%, 15%);
 $colorSignupBackground: hsl(217, 28%, 15%);
@@ -11,7 +15,7 @@ $colorErrorInput: hsl(0, 100%, 63%);
 $colorNeutral: hsl(0, 0%, 100%);
 
 // Layout Size :
-$maxDesktopWidth: 1440px;
+$maxDesktopWidth: 1320px; //1440px;
 $minMobileWidth: 375px;
 
 // Font Size

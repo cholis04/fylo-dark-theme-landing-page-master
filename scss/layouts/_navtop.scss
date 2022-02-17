@@ -1,0 +1,60 @@
+@use '../utils/variables' as var;
+@use '../utils/mixins' as mix;
+
+// Desktop
+.navtop {
+  background-color: var.$colorIntroBackground;
+  padding : {
+    top: 4.6rem;
+    bottom: 3rem;
+  }
+
+  &__wrapper {
+    @include mix.wrapper;
+    @include mix.flex(space-between, center, row);
+  }
+
+  &__menu {
+    @include mix.flex();
+  }
+  &__menu-item {
+    margin-left: 3.4rem;
+  }
+
+  &__link {
+    color: var.$colorNeutral;
+    opacity: 0.7;
+    font-size: 1.15em;
+    font-weight: 400;
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    // On Mouse Hover
+    &:hover {
+      opacity: 1;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+  }
+}
+
+// Tablet
+@media only screen and (max-width: var.$tabletBreakpoint) {
+  // Styles
+  .navtop {
+    padding : {
+      top: 2rem;
+      bottom: 2rem;
+    }
+  }
+}
+
+// Mobile
+@media only screen and (max-width: var.$mobileBreakpoint) {
+  // Styles
+  .navtop {
+    padding: {
+      top: 1rem;
+      bottom: 1rem;
+    }
+  }
+}
