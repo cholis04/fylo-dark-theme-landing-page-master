@@ -1,0 +1,26 @@
+@use '../utils/variables' as var;
+
+.button-link--primary {
+  font-family: var.$fontRaleway;
+  font-size: 1.2em;
+  font-weight: 700;
+  padding: 1em 5.4em;
+  background: {
+    image: var.$colorButtonCTA;
+  }
+  color: var.$colorNeutral;
+  border-radius: 50px;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background: {
+      image: linear-gradient(hsl(176, 89%, 75%), hsl(176, 68%, 64%));
+    }
+  }
+
+  @media only screen and (max-width: var.$mobileBreakpoint) {
+    & {
+      font-size: 1em;
+    }
+  }
+}

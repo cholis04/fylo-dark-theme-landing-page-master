@@ -3,3 +3,8 @@
 
 // Pages
 @use './pages/home';
+
+// Global Components
+@use './components/wrapper';
+@use './components/imageWrapper';
+@use './components/button';

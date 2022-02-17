@@ -26,6 +26,7 @@
     opacity: 0.7;
     font-size: 1.15em;
     font-weight: 400;
+    font-family: var.$fontRaleway;
     transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
     // On Mouse Hover
@@ -39,22 +40,39 @@
 
 // Tablet
 @media only screen and (max-width: var.$tabletBreakpoint) {
-  // Styles
   .navtop {
     padding : {
       top: 2rem;
       bottom: 2rem;
+    }
+
+    &__brand {
+      max-width: 120px;
+    }
+    &__menu-item {
+      margin-left: 2rem;
     }
   }
 }
 
 // Mobile
 @media only screen and (max-width: var.$mobileBreakpoint) {
-  // Styles
   .navtop {
     padding: {
       top: 1rem;
       bottom: 1rem;
+    }
+
+    &__brand {
+      max-width: 80px;
+    }
+
+    &__menu-item {
+      margin-left: 1.6rem;
+    }
+
+    &__link {
+      font-size: 0.8em;
     }
   }
 }

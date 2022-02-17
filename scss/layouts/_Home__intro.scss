@@ -1,0 +1,75 @@
+@use '../utils/variables' as var;
+@use '../utils/mixins' as mix;
+
+// Desktop
+.intro {
+  padding-top: 2em;
+  background: {
+    image: url(../../images/backgrounds/bg-curvy-desktop.svg);
+    repeat: no-repeat;
+    size: contain;
+    position: center bottom;
+  }
+
+  &__title {
+    margin: 0 auto;
+    margin-top: 2rem;
+    max-width: 860px;
+    text-align: center;
+    font-size: 2.9em;
+    line-height: 1.5em;
+    font-weight: 700;
+    color: var.$colorNeutral;
+    font-family: var.$fontRaleway;
+  }
+
+  &__paragraph {
+    margin: 0 auto;
+    margin-top: 2.2rem;
+    max-width: 580px;
+    text-align: center;
+    font-size: 1.4em;
+    line-height: 1.5em;
+    color: var.$colorNeutral;
+    opacity: 0.8;
+  }
+
+  &__action {
+    @include mix.flex;
+
+    margin-top: 1.6rem;
+    margin-bottom: 14rem;
+  }
+}
+
+// Tablet
+@media only screen and (max-width: var.$tabletBreakpoint) {
+  .intro {
+    &__title {
+      font-size: 2em;
+    }
+
+    &__paragraph {
+      font-size: 1.2em;
+    }
+  }
+}
+
+// Mobile
+@media only screen and (max-width: var.$mobileBreakpoint) {
+  .intro {
+    background: {
+      image: url(../../images/backgrounds/bg-curvy-mobile.svg);
+    }
+
+    &__title {
+      font-size: 1.7em;
+    }
+
+    &__paragraph {
+      margin-top: 1rem;
+      padding: 0 1.4em;
+      font-size: 1em;
+    }
+  }
+}

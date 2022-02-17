@@ -1,0 +1,8 @@
+@use '../utils/variables' as var;
+
+// Desktop, Tablet & Mobile
+.main {
+  background: {
+    color: var.$colorIntroBackground;
+  }
+}

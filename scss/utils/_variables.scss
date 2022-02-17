@@ -10,7 +10,11 @@ $colorFooterBackground: hsl(216, 53%, 9%);
 $colorTestimonialBackground: hsl(219, 30%, 18%);
 
 // Accent Colors
-$colorButtonCTA: linear-gradient(hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+$colorButtonCTA: linear-gradient(
+  90deg,
+  hsl(176, 68%, 64%) 2%,
+  hsl(198, 60%, 50%) 100%
+);
 $colorErrorInput: hsl(0, 100%, 63%);
 $colorNeutral: hsl(0, 0%, 100%);
 
@@ -19,7 +23,7 @@ $maxDesktopWidth: 1320px; //1440px;
 $minMobileWidth: 375px;
 
 // Font Size
-$bodyText: 14px;
+$bodyTextSize: 14px;
 
 // Font Familty:
 $fontRaleway: 'Raleway', sans-serif;

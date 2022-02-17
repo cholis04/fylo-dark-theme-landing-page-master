@@ -12,6 +12,7 @@
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-width: 375px;
 }
 
 img {
@@ -28,7 +29,7 @@ a {
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
 }
 
@@ -41,7 +42,6 @@ body {
   margin: 0 auto;
   width: 100%;
   max-width: 1320px;
-  min-width: 375px;
   padding: 0 1.5em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -80,6 +80,7 @@ body {
   opacity: 0.7;
   font-size: 1.15em;
   font-weight: 400;
+  font-family: "Raleway", sans-serif;
   transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .navtop__link:hover {
@@ -93,11 +94,138 @@ body {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
+  .navtop__brand {
+    max-width: 120px;
+  }
+  .navtop__menu-item {
+    margin-left: 2rem;
+  }
 }
 @media only screen and (max-width: 420px) {
   .navtop {
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+  .navtop__brand {
+    max-width: 80px;
+  }
+  .navtop__menu-item {
+    margin-left: 1.6rem;
+  }
+  .navtop__link {
+    font-size: 0.8em;
+  }
+}
+.main {
+  background-color: #1c2431;
+}
+
+.intro {
+  padding-top: 2em;
+  background-image: url(../../images/backgrounds/bg-curvy-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+}
+.intro__title {
+  margin: 0 auto;
+  margin-top: 2rem;
+  max-width: 860px;
+  text-align: center;
+  font-size: 2.9em;
+  line-height: 1.5em;
+  font-weight: 700;
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
+.intro__paragraph {
+  margin: 0 auto;
+  margin-top: 2.2rem;
+  max-width: 580px;
+  text-align: center;
+  font-size: 1.4em;
+  line-height: 1.5em;
+  color: white;
+  opacity: 0.8;
+}
+.intro__action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-top: 1.6rem;
+  margin-bottom: 14rem;
+}
+
+@media only screen and (max-width: 820px) {
+  .intro__title {
+    font-size: 2em;
+  }
+  .intro__paragraph {
+    font-size: 1.2em;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .intro {
+    background-image: url(../../images/backgrounds/bg-curvy-mobile.svg);
+  }
+  .intro__title {
+    font-size: 1.7em;
+  }
+  .intro__paragraph {
+    margin-top: 1rem;
+    padding: 0 1.4em;
+    font-size: 1em;
+  }
+}
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1320px;
+  padding: 0 1.5em;
+}
+
+.image-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.button-link--primary {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+  padding: 1em 5.4em;
+  background-image: linear-gradient(90deg, #65e2d9 2%, #339ecc 100%);
+  color: white;
+  border-radius: 50px;
+  transition: all 0.2s ease-in-out;
+}
+.button-link--primary:hover {
+  background-image: linear-gradient(#87f8f0, #65e2d9);
+}
+@media only screen and (max-width: 420px) {
+  .button-link--primary {
+    font-size: 1em;
   }
 }
 
