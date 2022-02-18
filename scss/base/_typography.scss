@@ -10,3 +10,9 @@ body {
   font-family: var.$fontOpenSans;
   font-size: var.$bodyTextSize;
 }
+
+p {
+  line-height: 1.5em;
+  color: var.$colorNeutral;
+  opacity: 0.8;
+}

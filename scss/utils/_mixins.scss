@@ -1,5 +1,11 @@
 @use './variables' as var;
 
+// Heading
+@mixin heading {
+  font-family: var.$fontRaleway;
+  color: var.$colorNeutral;
+}
+
 // Wrapper
 @mixin wrapper {
   margin: 0 auto;

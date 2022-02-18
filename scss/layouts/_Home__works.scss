@@ -1,0 +1,88 @@
+@use '../utils/variables' as var;
+@use '../utils/mixins' as mix;
+
+// Desktop
+.works {
+  //   border: 2px solid greenyellow;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: {
+    color: hsl(218, 28%, 13%);
+  }
+
+  & > .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__article {
+    @include mix.flex($align-items: start, $direction: column);
+
+    padding: 0 4em;
+  }
+
+  &__title {
+    @include mix.heading;
+
+    margin-top: 2rem;
+    font-size: 3em;
+    max-width: 480px;
+  }
+
+  &__paragraph {
+    font-size: 1.15em;
+    margin-top: 1.2rem;
+  }
+
+  &__link {
+    color: hsl(176, 68%, 64%);
+    padding-bottom: 0.2em;
+    border-bottom: 1px solid hsl(176, 68%, 64%);
+
+    &:hover {
+      color: var.$colorNeutral;
+      border-bottom: 1px solid var.$colorNeutral;
+
+      & > svg > g > g > use {
+        fill: var.$colorNeutral;
+      }
+    }
+  }
+}
+
+// Tablet
+@media only screen and (max-width: var.$tabletBreakpoint) {
+  .works {
+    padding: {
+      top: 12em;
+      bottom: 5em;
+    }
+
+    & > .wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    &__title {
+      font-size: 1.6em;
+    }
+  }
+}
+
+// Mobile
+@media only screen and (max-width: var.$mobileBreakpoint) {
+  .works {
+    &__article {
+      padding: 0;
+    }
+
+    &__title {
+      font-size: 1.2em;
+    }
+
+    &__paragraph {
+      font-size: 1em;
+    }
+  }
+}

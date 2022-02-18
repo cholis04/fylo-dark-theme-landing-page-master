@@ -3,7 +3,10 @@
 
 // Desktop
 .intro {
-  padding-top: 2em;
+  padding : {
+    top: 2em;
+    bottom: 12em;
+  }
   background: {
     image: url(../../images/backgrounds/bg-curvy-desktop.svg);
     repeat: no-repeat;
@@ -12,6 +15,8 @@
   }
 
   &__title {
+    @include mix.heading;
+
     margin: 0 auto;
     margin-top: 2rem;
     max-width: 860px;
@@ -19,8 +24,6 @@
     font-size: 2.9em;
     line-height: 1.5em;
     font-weight: 700;
-    color: var.$colorNeutral;
-    font-family: var.$fontRaleway;
   }
 
   &__paragraph {
@@ -29,16 +32,12 @@
     max-width: 580px;
     text-align: center;
     font-size: 1.4em;
-    line-height: 1.5em;
-    color: var.$colorNeutral;
-    opacity: 0.8;
   }
 
   &__action {
     @include mix.flex;
 
-    margin-top: 1.6rem;
-    margin-bottom: 14rem;
+    margin-top: 1.8rem;
   }
 }
 

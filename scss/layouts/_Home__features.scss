@@ -1,0 +1,53 @@
+@use '../utils/variables' as var;
+@use '../utils/mixins' as mix;
+
+// Desktop
+.features {
+  background: {
+    color: var.$colorMainBackground;
+  }
+  & > .wrapper {
+    max-width: 1060px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    row-gap: 5.6rem;
+  }
+
+  &__list {
+    text-align: center;
+
+    & > .image-wrapper > img {
+      height: 80px;
+    }
+  }
+
+  &__title {
+    @include mix.heading;
+
+    margin-top: 2rem;
+    font-size: 1.4em;
+    font-weight: 700;
+    opacity: 1;
+  }
+
+  &__paragraph {
+    margin: 0 auto;
+    margin-top: 0.4rem;
+    max-width: 340px;
+  }
+}
+
+// Tablet
+@media only screen and (max-width: var.$tabletBreakpoint) {
+  .features {
+    & > .wrapper {
+      grid-template-columns: 1fr;
+      row-gap: 5.6rem;
+    }
+  }
+}
+
+// Mobile
+@media only screen and (max-width: var.$mobileBreakpoint) {
+}
