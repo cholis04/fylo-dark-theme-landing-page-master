@@ -302,7 +302,7 @@ p {
 }
 .review {
   padding: 1.6em 0;
-  padding-bottom: 25em;
+  padding-bottom: 26em;
   background-color: #181f2a;
   background-image: url(../../images/backgrounds/bg-quotes.png);
   background-repeat: no-repeat;
@@ -341,6 +341,28 @@ p {
     background-size: 25px;
   }
 }
+.footer {
+  background-color: #0b1523;
+}
+.footer__wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1320px;
+  padding: 0 1.5em;
+}
+
+.signup {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 860px;
+  background-color: #1c2431;
+  border-radius: 5px;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  -webkit-box-shadow: 2px 2px 15px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 2px 2px 15px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
 .wrapper {
   margin: 0 auto;
   width: 100%;
