@@ -1,0 +1,22 @@
+@use '../utils/variables' as var;
+@use '../utils/mixins' as mix;
+
+// Desktop
+.signup {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 860px;
+  background: {
+    color: var.$colorSignupBackground;
+  }
+  border-radius: 5px;
+  @include mix.boxShadow();
+}
+
+// Tablet
+@media only screen and (max-width: var.$tabletBreakpoint) {
+}
+
+// Mobile
+@media only screen and (max-width: var.$mobileBreakpoint) {
+}
