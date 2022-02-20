@@ -1,0 +1,13 @@
+@use '../utils/variables' as var;
+@use '../utils/mixins' as mix;
+
+// Desktop, Tablet & Mobile
+.footer {
+  background: {
+    color: var.$colorFooterBackground;
+  }
+
+  &__wrapper {
+    @include mix.wrapper;
+  }
+}
