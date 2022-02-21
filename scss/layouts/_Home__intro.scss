@@ -8,7 +8,7 @@
     bottom: 12em;
   }
   background: {
-    image: url(../../images/backgrounds/bg-curvy-desktop.svg);
+    image: url(../images/backgrounds/bg-curvy-desktop.svg);
     repeat: no-repeat;
     size: contain;
     position: center bottom;
@@ -58,7 +58,7 @@
 @media only screen and (max-width: var.$mobileBreakpoint) {
   .intro {
     background: {
-      image: url(../../images/backgrounds/bg-curvy-mobile.svg);
+      image: url(../images/backgrounds/bg-curvy-mobile.svg);
     }
 
     &__title {

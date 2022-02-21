@@ -129,7 +129,7 @@ p {
 .intro {
   padding-top: 2em;
   padding-bottom: 12em;
-  background-image: url(../../images/backgrounds/bg-curvy-desktop.svg);
+  background-image: url(../images/backgrounds/bg-curvy-desktop.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center bottom;
@@ -179,7 +179,7 @@ p {
 }
 @media only screen and (max-width: 420px) {
   .intro {
-    background-image: url(../../images/backgrounds/bg-curvy-mobile.svg);
+    background-image: url(../images/backgrounds/bg-curvy-mobile.svg);
   }
   .intro__title {
     font-size: 1.7em;
@@ -304,7 +304,7 @@ p {
   padding: 1.6em 0;
   padding-bottom: 26em;
   background-color: #181f2a;
-  background-image: url(../../images/backgrounds/bg-quotes.png);
+  background-image: url(../images/backgrounds/bg-quotes.png);
   background-repeat: no-repeat;
   background-position: 10rem 0;
 }
