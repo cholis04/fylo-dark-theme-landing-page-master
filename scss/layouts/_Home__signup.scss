@@ -81,8 +81,44 @@
 
 // Tablet
 @media only screen and (max-width: var.$tabletBreakpoint) {
+  .signup {
+    width: 90%;
+    &__form {
+      @include mix.flex($direction: column);
+    }
+
+    &__input-group {
+      position: relative;
+      max-width: 480px;
+    }
+
+    &__input-email:valid {
+      margin-bottom: 1.4rem;
+    }
+
+    &__error-input {
+      margin-bottom: 1rem;
+      padding : {
+        left: 0;
+        right: 0;
+      }
+      position: relative;
+    }
+  }
 }
 
 // Mobile
 @media only screen and (max-width: var.$mobileBreakpoint) {
+  .signup {
+    top: -15rem;
+
+    &__title {
+      font-size: 1.4em;
+    }
+
+    &__paragraph {
+      padding: 0 1em;
+      font-size: 1em;
+    }
+  }
 }
