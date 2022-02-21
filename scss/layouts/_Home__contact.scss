@@ -1,0 +1,88 @@
+@use '../utils/variables' as var;
+@use '../utils/mixins' as mix;
+
+// Desktop
+.contact {
+  margin-top: 2.6rem;
+  margin-bottom: 6rem;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+  .location {
+    grid-column: 1/5;
+  }
+
+  .contact-us {
+    grid-column: 5/8;
+  }
+
+  .navfooter {
+    grid-column: 8/10;
+  }
+
+  .navinfo {
+    grid-column: 10/11;
+  }
+
+  .navsocial {
+    grid-column: 11/13;
+  }
+}
+
+// Tablet
+@media only screen and (max-width: var.$tabletBreakpoint) {
+  .contact {
+    grid-template-columns: 1fr 1fr 1fr;
+    .location {
+      grid-column: 1/4;
+    }
+
+    .contact-us {
+      margin-bottom: 2rem;
+      grid-column: 1/4;
+    }
+
+    .navfooter {
+      margin-top: 2rem;
+      grid-column: 1/2;
+    }
+
+    .navinfo {
+      margin-top: 2rem;
+      grid-column: 2/3;
+    }
+
+    .navsocial {
+      margin-top: 2rem;
+      grid-column: 3/4;
+    }
+  }
+}
+
+// Mobile
+@media only screen and (max-width: var.$mobileBreakpoint) {
+  .contact {
+    padding: 0 2em;
+    grid-template-columns: 1fr;
+    .location {
+      grid-column: 1/1;
+    }
+
+    .contact-us {
+      grid-column: 1/1;
+    }
+
+    .navfooter {
+      grid-column: 1/1;
+    }
+
+    .navinfo {
+      grid-column: 1/1;
+    }
+
+    .navsocial {
+      grid-column: 1/11;
+    }
+  }
+}

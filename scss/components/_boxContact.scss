@@ -1,0 +1,29 @@
+@use '../utils/variables' as var;
+@use '../utils/mixins' as mix;
+
+.box-contact {
+  @include mix.flex($align-items: start, $justify-content: flex-start);
+  margin-bottom: 1rem;
+
+  &__icon {
+    margin-right: 1.6rem;
+  }
+
+  &__text {
+    max-width: 340px;
+    font-size: 1.1em;
+  }
+}
+
+// Tablet
+@media only screen and (max-width: var.$tabletBreakpoint) {
+}
+
+// Mobile
+@media only screen and (max-width: var.$mobileBreakpoint) {
+  .box-contact {
+    &__text {
+      font-size: 1em;
+    }
+  }
+}

@@ -353,9 +353,25 @@ p {
 }
 .footer__wrapper > .clear-absolute {
   margin-bottom: 12rem;
-  border: 2px solid red;
+  height: 1px;
+}
+.footer__wrapper > .image-wrapper {
+  justify-content: flex-start;
 }
 
+@media only screen and (max-width: 820px) {
+  .footer__wrapper > .clear-absolute {
+    margin-bottom: 18rem;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .footer__wrapper > .clear-absolute {
+    margin-bottom: 16rem;
+  }
+  .footer__wrapper > .image-wrapper {
+    padding: 0 2em;
+  }
+}
 .signup {
   position: absolute;
   top: -10rem;
@@ -479,6 +495,142 @@ p {
     font-size: 1em;
   }
 }
+.contact {
+  margin-top: 2.6rem;
+  margin-bottom: 6rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.contact .location {
+  grid-column: 1/5;
+}
+.contact .contact-us {
+  grid-column: 5/8;
+}
+.contact .navfooter {
+  grid-column: 8/10;
+}
+.contact .navinfo {
+  grid-column: 10/11;
+}
+.contact .navsocial {
+  grid-column: 11/13;
+}
+
+@media only screen and (max-width: 820px) {
+  .contact {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .contact .location {
+    grid-column: 1/4;
+  }
+  .contact .contact-us {
+    margin-bottom: 2rem;
+    grid-column: 1/4;
+  }
+  .contact .navfooter {
+    margin-top: 2rem;
+    grid-column: 1/2;
+  }
+  .contact .navinfo {
+    margin-top: 2rem;
+    grid-column: 2/3;
+  }
+  .contact .navsocial {
+    margin-top: 2rem;
+    grid-column: 3/4;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .contact {
+    padding: 0 2em;
+    grid-template-columns: 1fr;
+  }
+  .contact .location {
+    grid-column: 1/1;
+  }
+  .contact .contact-us {
+    grid-column: 1/1;
+  }
+  .contact .navfooter {
+    grid-column: 1/1;
+  }
+  .contact .navinfo {
+    grid-column: 1/1;
+  }
+  .contact .navsocial {
+    grid-column: 1/11;
+  }
+}
+.navsocial__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: flex-end;
+  -ms-flex-pack: flex-end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+.navsocial__menu-item {
+  margin-left: 1rem;
+}
+.navsocial__link > svg {
+  width: 28px;
+}
+.navsocial__link > svg > path {
+  fill: white;
+  transition: all 0.3s ease-in-out;
+}
+.navsocial__link:hover > svg > path {
+  fill: #65e2d9;
+}
+
+@media only screen and (max-width: 820px) {
+  .navsocial {
+    margin-top: 4rem;
+  }
+  .navsocial__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: flex-start;
+    -ms-flex-pack: flex-start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .navsocial {
+    margin-top: 4rem;
+  }
+  .navsocial__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
 .wrapper {
   margin: 0 auto;
   width: 100%;
@@ -592,6 +744,48 @@ p {
   .card__text {
     font-size: 0.75em;
   }
+}
+.box-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: flex-start;
+  -ms-flex-pack: flex-start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+.box-contact__icon {
+  margin-right: 1.6rem;
+}
+.box-contact__text {
+  max-width: 340px;
+  font-size: 1.1em;
+}
+
+@media only screen and (max-width: 420px) {
+  .box-contact__text {
+    font-size: 1em;
+  }
+}
+.navlist__menu-item {
+  margin-bottom: 1.2rem;
+}
+.navlist__link {
+  font-size: 1.1em;
+  color: white;
+  opacity: 0.8;
+  transition: all 0.2s ease-in-out;
+}
+.navlist__link:hover {
+  font-weight: 700;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=main.css.map */

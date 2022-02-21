@@ -1,0 +1,52 @@
+@use '../utils/variables' as var;
+@use '../utils/mixins' as mix;
+
+// Desktop
+.navsocial {
+  &__menu {
+    @include mix.flex($justify-content: flex-end);
+  }
+
+  &__menu-item {
+    margin-left: 1rem;
+  }
+
+  &__link {
+    & > svg {
+      width: 28px;
+
+      & > path {
+        fill: var.$colorNeutral;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+
+  &__link:hover {
+    & > svg {
+      & > path {
+        fill: hsl(176, 68%, 64%);
+      }
+    }
+  }
+}
+
+// Tablet
+@media only screen and (max-width: var.$tabletBreakpoint) {
+  .navsocial {
+    margin-top: 4rem;
+    &__menu {
+      @include mix.flex($justify-content: flex-start);
+    }
+  }
+}
+
+// Mobile
+@media only screen and (max-width: var.$mobileBreakpoint) {
+  .navsocial {
+    margin-top: 4rem;
+    &__menu {
+      @include mix.flex($justify-content: center);
+    }
+  }
+}
