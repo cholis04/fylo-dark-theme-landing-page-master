@@ -3,14 +3,80 @@
 
 // Desktop
 .signup {
-  margin: 0 auto;
+  position: absolute;
+  top: -10rem;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
   max-width: 860px;
+  padding: 3.4em 2em;
   background: {
     color: var.$colorSignupBackground;
   }
   border-radius: 5px;
   @include mix.boxShadow();
+  text-align: center;
+
+  &__title {
+    font-family: var.$fontRaleway;
+    color: var.$colorNeutral;
+    font-size: 2.3em;
+  }
+
+  &__paragraph {
+    margin : {
+      top: 1.4rem;
+      left: auto;
+      right: auto;
+    }
+    max-width: 640px;
+  }
+
+  &__form {
+    @include mix.flex($justify-content: space-between, $align-items: start);
+    margin : {
+      top: 2rem;
+      left: auto;
+      right: auto;
+    }
+    max-width: 710px;
+  }
+
+  &__input-group {
+    position: relative;
+    width: 100%;
+    max-width: 480px;
+  }
+  &__label-email {
+    display: none;
+  }
+
+  &__error-input {
+    display: none;
+    font-size: 0.8em;
+    padding: 0.5em 3.4em;
+    position: absolute;
+    color: var.$colorErrorInput;
+  }
+
+  &__input-email {
+    font-size: 1em;
+    width: 100%;
+    padding: 1em 2.8em;
+    font-family: var.$fontOpenSans;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+
+    &::placeholder {
+      color: gray;
+      opacity: 0.4;
+    }
+
+    &:invalid ~ .signup__error-input {
+      display: block;
+    }
+  }
 }
 
 // Tablet

@@ -70,7 +70,7 @@
         </p>
 
         <div class="intro__action">
-          <a href="#" class="button-link--primary">Get Started</a>
+          <a href="#" class="button--primary">Get Started</a>
         </div>
 
       </div>
@@ -241,14 +241,16 @@
         <form class="signup__form" name="signup">
           <div class="signup__input-group">
             <label class="signup__label-email" for="email">Email</label>
-            <input type="email" id="email" name="email" required placeholder="email@example.com"
+            <input type="email" id="email" name="email" placeholder="email@example.com" required
               class="signup__input-email" />
+            <div class="signup__error-input">Please enter a valid email address</div>
           </div>
-          <div class="signup__input-group">
-            <button class="signup__button-submit">Get Started For Free</button>
-          </div>
+          <button class="button--submit">Get Started For Free</button>
         </form>
       </section>
+
+      <!-- Clear -->
+      <div class="clear-absolute"></div>
 
       <!-- Logo -->
       <div class="image-wrapper">

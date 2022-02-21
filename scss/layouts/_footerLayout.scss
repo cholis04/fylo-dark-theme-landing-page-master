@@ -3,11 +3,17 @@
 
 // Desktop, Tablet & Mobile
 .footer {
+  position: relative;
   background: {
     color: var.$colorFooterBackground;
   }
 
   &__wrapper {
     @include mix.wrapper;
+
+    & > .clear-absolute {
+      margin-bottom: 12rem;
+      border: 2px solid red;
+    }
   }
 }
