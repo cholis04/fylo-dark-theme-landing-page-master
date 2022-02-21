@@ -1,0 +1,28 @@
+@use '../utils/variables' as var;
+@use '../utils/mixins' as mix;
+
+.attribution {
+  padding-bottom: 3rem;
+  &__paragraph {
+    color: var.$colorNeutral;
+    opacity: 0.6;
+    font-size: 0.8em;
+    text-align: center;
+  }
+
+  &__link {
+    color: hsl(176, 68%, 64%);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// Tablet
+@media only screen and (max-width: var.$tabletBreakpoint) {
+}
+
+// Mobile
+@media only screen and (max-width: var.$mobileBreakpoint) {
+}

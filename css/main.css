@@ -788,4 +788,20 @@ p {
   opacity: 1;
 }
 
+.attribution {
+  padding-bottom: 3rem;
+}
+.attribution__paragraph {
+  color: white;
+  opacity: 0.6;
+  font-size: 0.8em;
+  text-align: center;
+}
+.attribution__link {
+  color: #65e2d9;
+}
+.attribution__link:hover {
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=main.css.map */
