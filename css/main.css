@@ -446,7 +446,7 @@ p {
   color: gray;
   opacity: 0.4;
 }
-.signup__input-email:invalid ~ .signup__error-input {
+.signup__input-email:not(:placeholder-shown):invalid ~ .signup__error-input {
   display: block;
 }
 

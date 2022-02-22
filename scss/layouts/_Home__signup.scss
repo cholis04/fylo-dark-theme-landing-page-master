@@ -73,7 +73,7 @@
       opacity: 0.4;
     }
 
-    &:invalid ~ .signup__error-input {
+    &:not(:placeholder-shown):invalid ~ .signup__error-input {
       display: block;
     }
   }
