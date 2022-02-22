@@ -336,7 +336,7 @@ p {
   .review {
     padding-top: 10em;
     padding-bottom: 30em;
-    background-image: url(../../images/backgrounds/bg-quotes.png);
+    background-image: url(../images/backgrounds/bg-quotes.png);
     background-position: 4rem 8rem;
     background-size: 25px;
   }
