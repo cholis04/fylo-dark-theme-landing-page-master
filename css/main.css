@@ -227,7 +227,7 @@ p {
   }
 }
 .works {
-  min-height: 100vh;
+  min-height: 90vh;
   display: grid;
   place-items: center;
   background-color: #181f2a;
@@ -301,12 +301,13 @@ p {
   }
 }
 .review {
+  border: 1px solid red;
   padding: 1.6em 0;
   padding-bottom: 26em;
   background-color: #181f2a;
   background-image: url(../images/backgrounds/bg-quotes.png);
   background-repeat: no-repeat;
-  background-position: 10rem 0;
+  background-position: 14rem 0rem;
 }
 .review__wrapper {
   margin: 0 auto;
