@@ -2,172 +2,326 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8DT1WP0L2C"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-8DT1WP0L2C');
+  </script>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+   <!-- Updated meta tags for SEO optimization :) -->
+  <meta name="description"
+    content="Kaamyaab: The leading career platform in Pakistan for students and professionals. Discover top job opportunities, internships, and career resources with Kaamyaab" />
+  <meta name="keywords"
+    content="Kaamyaab, career platform, jobs, internships, Pakistan, students, professionals, employment opportunities, career resources,kamyaab, kamyab" />
+ 
+   <!-- Open Graph Tags for Social Media Optimization -->
+  <meta property="og:title" content="Kaamyaab: Your Career Pathway" />
+   <meta property="og:description" content="Explore the best career opportunities in Pakistan with Kaamyaab, Kamyab, Kamyaab, and Kaabyab. Join now to get exclusive access to internships, jobs, and career advice." />
+   <meta property="og:image" content="https://kaamyaab.pk/images/og-image.png" />
+   <meta property="og:url" content="https://kaamyaab.pk" />
+ 
+   <!-- Twitter Card Tags -->
+   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kaamyaab: Your Career Pathway" />
+   <meta name="twitter:description" content="Explore the best career opportunities in Pakistan with Kaamyaab, Kamyab, Kamyaab, and Kaabyab. Join now to get exclusive access to internships, jobs, and career advice." />
+   <meta name="twitter:image" content="https://kaamyaab.pk/images/og-image.png" />
+  <meta name="description" content="Empowering you with exclusive access to top career opportunities in Pakistan, bridging the gap between education and employment." />
+  <meta name="keywords" content="career, jobs, internships, employment, education, Pakistan" />
+  <meta property="og:title" content="Kaamyaab: Get Ahead in Your Career" />
+  <meta property="og:description" content="Empowering you with exclusive access to top career opportunities in Pakistan, bridging the gap between education and employment." />
+  <meta property="og:image" content="https://kaamyaab.pk/images/og-image.png" />
+  <meta property="og:url" content="https://kaamyaab.pk" />
+  <title>Kaamyaab: Get Ahead in Your Career</title>
 
   <link rel="stylesheet" type="text/css" href="./css/main.css" />
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+  <style>
+    .banner {
+      background-color: #007bff;
+      color: white;
+      text-align: center;
+      padding: 7px;
+      position: relative;
+      width: 100%;
+      display: block;
+    }
+    .banner a{
+      color: inherit;
+      text-decoration: none;
+    }
+    .hidden {
+      display: none;
+    }
+
+    .content {
+      padding: 20px;
+    }
+  </style>
 </head>
 
 <body>
+  <div class="banner" id="banner">
+    <p>Employer? <u><b><a href="https://forms.gle/wzBL1Hrdzt3YxSfU7" target="_blank">Contact us</a></b></u> today to explore how Kaamyaab can help you find the best candidates.</p>
+</div>
 
-  <!-- Navbar -->
+
+
   <nav class="navtop">
     <div class="navtop__wrapper">
-
       <div class="navtop__brand">
-        <a href="./" class="navtop__brandlink">
-          <img src="./images/logo.svg" alt="Fylo" title="Fylo" class="navtop__brandlogo" />
-        </a>
+        <a href="./" class="navtop__brandlink cyan">Kaamyaab</a>
       </div>
       <ul class="navtop__menu">
         <li class="navtop__menu-item">
-          <a href="#" class="navtop__link">Features</a>
+          <a href="#features" class="navtop__link">Features</a>
         </li>
         <li class="navtop__menu-item">
-          <a href="#" class="navtop__link">Team</a>
+          <a href="#FAQs" class="navtop__link">FAQs</a>
         </li>
         <li class="navtop__menu-item">
-          <a href="#" class="navtop__link">Sign In</a>
+          <a href="#footer" class="navtop__link">Contact</a>
         </li>
       </ul>
-
     </div>
   </nav>
 
-  <!-- Main Content -->
   <main class="main">
-
-    <!-- Intro -->
     <section class="intro" aria-label="Introduction">
-      <div class="wrapper">
-
-        <div class="image-wrapper">
-          <img src="./images/decorations/illustration-intro.png" alt="Illustration Intro" title="Illustration Intro"
-            class="image-wrapper__img" />
-        </div>
-
-        <h1 class="intro__title">All your files in one secure location, accessible anywhere.</h1>
+      <div class="intro__container">
+        <h1 class="intro__title">
+          Get ahead and get hired with <span class="cyan">Kaamyaab</span>
+        </h1>
 
         <p class="intro__paragraph">
-          Fylo stores all your most important files in one secure location. Access them wherever
-          you need, share and collaborate with friends family, and co-workers.
+          Empowering you with exclusive access to top opportunities in Pakistan, bridging the gap between education and employment.
         </p>
 
-        <div class="intro__action">
-          <a href="#" class="button--primary">Get Started</a>
+        <div class="intro__action intro__action--animation">
+          <a class="intro__button" href="./signup.html" target="_blank" style="width: auto">Join Waitlist</a>
         </div>
-
       </div>
+
     </section>
+    <div class="company-design-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2>Coming Soon</h2>
+            <div class="company-list">
+              <div class="scroller" data-animated="true" data-direction="left" data-speed="slow">
+                <div class="scroller__inner">
+                  <img src="images/client-logos-partner1.png" alt="Partner 1 Logo">
+                  <img src="images/client-logos-partner2.png" alt="Partner 2 Logo">
+                  <img src="images/client-logos-partner3.png" alt="Partner 3 Logo">
+                  <img src="images/client-logos-partner4.png" alt="Partner 4 Logo">
+                  <img src="images/client-logos-partner5.png" alt="Partner 5 Logo">
+                  <img src="images/client-logos-partner1.png" alt="Partner 1 Logo">
+                  <img src="images/client-logos-partner2.png" alt="Partner 2 Logo">
+                  <img src="images/client-logos-partner3.png" alt="Partner 3 Logo">
+                  <img src="images/client-logos-partner4.png" alt="Partner 4 Logo">
+                  <img src="images/client-logos-partner5.png" alt="Partner 5 Logo">
+                  <img src="images/client-logos-partner1.png" alt="Partner 1 Logo">
+                  <img src="images/client-logos-partner2.png" alt="Partner 2 Logo">
+                  <img src="images/client-logos-partner3.png" alt="Partner 3 Logo">
+                  <img src="images/client-logos-partner4.png" alt="Partner 4 Logo">
+                  <img src="images/client-logos-partner5.png" alt="Partner 5 Logo">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <!-- Features -->
-    <section class="features" aria-label="features">
-      <div class="wrapper">
 
-        <div class="features__list">
-          <div class="image-wrapper">
-            <img src="./images/icons/icon-access-anywhere.svg" alt="" title="Access Anywhere"
-              class="image-wrapper__img" />
-          </div>
-          <p class="features__title">Access your files, anywhere</p>
-          <p class="features__paragraph">
-            The ability to use a smartphone, tablet, or computer to access your account means your
-            files follow you everywhere.
-          </p>
-        </div>
-        <div class="features__list">
-          <div class="image-wrapper">
-            <img src="./images/icons/icon-security.svg" alt="" title="Security you can trust"
-              class="image-wrapper__img" />
-          </div>
-          <p class="features__title">Security you can trust</p>
-          <p class="features__paragraph">
-            2-factor authentication and user-controlled encryption are just a couple of the security
-            features we allow to help secure your files.
-          </p>
-        </div>
-        <div class="features__list">
-          <div class="image-wrapper">
-            <img src="./images/icons/icon-collaboration.svg" alt="" title="Real Time Collaboration"
-              class="image-wrapper__img" />
-          </div>
-          <p class="features__title">Real-time collaboration</p>
-          <p class="features__paragraph">
-            Securely share files and folders with friends, family and colleagues for live collaboration. No email
-            attachments required.
-          </p>
-        </div>
-        <div class="features__list">
-          <div class="image-wrapper">
-            <img src="./images/icons/icon-any-file.svg" alt="" title="Any type of File" class="image-wrapper__img" />
-          </div>
-          <p class="features__title">Store any type of file</p>
-          <p class="features__paragraph">
-            Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types
-            to be securely stored and shared.
-          </p>
-        </div>
+  </main>
 
+  <!-- Features -->
+
+  <section class="features" aria-label="features" id="features">
+    <h1><span class="cyan">Why</span> Us?</h1>
+    <div class="wrapper">
+      <div class="features__list">
+        <div class="image-wrapper">
+          <img src="./images/icons/AI CHATBOT.webp" alt="" title="Security you can trust" class="image-wrapper__img"
+            style="width: 150px; height: 80px" />
+        </div>
+        <p class="features__title">Powered By AI</p>
+        <p class="features__paragraph">
+          Get instant help with our AI assistant—whether you need help with
+          job searches, crafting resumes, or career advice. Alongside
+          recommending the most relevant jobs for you, our AI helps you
+          develop your profile to best suit the jobs you want. With Kaamyaab,
+          you’re always two steps ahead.
+        </p>
+      </div>
+
+      <div class="features__list">
+        <div class="image-wrapper">
+          <img src="./images/icons/icon-access-anywhere.svg" alt="" title="Access Anywhere"
+            class="image-wrapper__img" />
+        </div>
+        <p class="features__title">Premier Job Board</p>
+        <p class="features__paragraph">
+          Explore our comprehensive job board. Find internships, part-time
+          jobs, and full-time career opportunities that match your skills and
+          interests at top companies across Pakistan.
+        </p>
+      </div>
+      <div class="features__list">
+        <div class="image-wrapper">
+          <img src="./images/icons/Networking Events.webp" alt="" title="Security you can trust"
+            class="image-wrapper__img" width="175" height="1000" />
+        </div>
+        <p class="features__title">Networking Events</p>
+        <p class="features__paragraph">
+          Join events hosted by companies and industry professionals. Polish
+          your soft skills and break into the professional world.
+        </p>
+      </div>
+      <div class="features__list">
+        <div class="image-wrapper">
+          <img src="./images/icons/icon-collaboration.svg" alt="" title="Real Time Collaboration"
+            class="image-wrapper__img" />
+        </div>
+        <p class="features__title">One-Click Application</p>
+        <p class="features__paragraph">
+          Apply for jobs with a single click. Our auto-apply feature
+          streamlines the application process, making it quick and efficient,
+          and saving you valuable time and effort in your job search.
+        </p>
+      </div>
+      <div class="features__list">
+        <div class="image-wrapper">
+          <img src="./images/icons/icon-any-file.svg" alt="" title="Any type of File" class="image-wrapper__img" />
+        </div>
+        <p class="features__title">ATS Approved Resume Builder</p>
+        <p class="features__paragraph">
+          Create a standout resume effortlessly. Our integrated resume builder
+          helps you craft a professional, ATS-friendly resume that catches the
+          eye of potential employers.
+        </p>
+      </div>
+      <div class="features__list">
+        <div class="image-wrapper">
+          <img src="./images/icons/Micro Internships.webp" alt="" title="Access Anywhere" class="image-wrapper__img"
+            style="width: 130px; height: 80px" />
+        </div>
+        <p class="features__title">Integrated Career Services</p>
+        <p class="features__paragraph">
+          Benefit from university tools that streamline placements and
+          internships, all in one place.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Apply Now 2 -->
+  <main class="main">
+    <!-- Intro -->
+    <section class="intro1" aria-label="Introduction">
+      <div class="intro__container">
+        <h1 class="intro__title">Best place to get hired</h1>
+        <div class="intro__action">
+          <a class="intro__button" onclick="togglePopup()" href="./signup.html" target="_blank" style="width: auto">
+            Join Waitlist</a>
+        </div>
       </div>
     </section>
 
     <!-- How it Works -->
-    <section class="works" aria-label="How it works">
+    <section class="works" aria-label="How it works" id="FAQs">
       <div class="wrapper">
-
         <div class="image-wrapper">
           <img src="./images/decorations/illustration-stay-productive.png" alt="Stay Productive"
             title="Illustration Stay Productive" class="image-wrapper__img" />
         </div>
         <article class="works__article">
-          <h2 class="works__title">Stay productive, wherever you are</h2>
-          <p class="works__paragraph">
-            Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage
-            needs.
-          </p>
-          <p class="works__paragraph">
-            Securely share files and folders with friends, family and colleagues for live collaboration. No email
-            attachments required.
-          </p>
-          <p class="works__paragraph">
-            <a href="#" class="works__link">See how Fylo works <svg width="16" height="16"
-                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <defs>
-                  <circle id="b" cx="6" cy="6" r="6" />
-                  <filter x="-25%" y="-25%" width="150%" height="150%" filterUnits="objectBoundingBox" id="a">
-                    <feOffset in="SourceAlpha" result="shadowOffsetOuter1" />
-                    <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1" />
-                    <feColorMatrix
-                      values="0 0 0 0 0.384313725 0 0 0 0 0.878431373 0 0 0 0 0.850980392 0 0 0 0.811141304 0"
-                      in="shadowBlurOuter1" />
-                  </filter>
-                </defs>
-                <g fill="none" fill-rule="evenodd">
-                  <g transform="translate(2 2)">
-                    <use fill="#000" filter="url(#a)" xlink:href="#b" />
-                    <use fill="#62E0D9" xlink:href="#b" />
-                  </g>
-                  <path d="M8.582 6l-.363.35 1.452 1.4H5.333v.5h4.338L8.22 9.65l.363.35 2.074-2z" fill="#1B2330" />
-                </g>
-              </svg>
-            </a>
-          </p>
-        </article>
+          <h2 class="works__title"><span class="cyan">FAQs</span></h2>
 
+          <section class="accordion" id="1">
+            <h1 class="accordian__title">
+              <a href="#1">What is Kaamyaab? </a>
+            </h1>
+            <div class="accordian__content">
+              <div class="accordian__wrapper">
+                <p>
+                  Kaamyaab is an innovative career platform designed
+                  specifically for students, offering a seamless way to apply
+                  for internships, jobs, and research assistantships. It
+                  combines one-click applications with a curated job board and
+                  integrated career services to streamline your path to
+                  professional success.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="accordion" id="2">
+            <h1 class="accordian__title">
+              <a href="#2">How will it help me? </a>
+            </h1>
+            <div class="accordian__content">
+              <div class="accordian__wrapper">
+                <p>
+                  Kaamyaab simplifies your job search by providing tailored
+                  opportunities that match your academic background and career
+                  goals. With features like one-click applications, real-time
+                  updates, and access to vetted job listings, Kaamyaab helps
+                  you stay ahead in your career journey and increases your
+                  chances of getting hired quickly.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="accordion" id="3">
+            <h1 class="accordian__title">
+              <a href="#3">How can I get access? </a>
+            </h1>
+            <div class="accordian__content">
+              <div class="accordian__wrapper">
+                <p>
+                  To gain access to Kaamyaab, simply enter your .edu email
+                  below to join the waitlist. The more friends you refer to
+                  join the waitlist, the faster you can get early access to
+                  our platform. Share your unique referral link with fellow
+                  students, and for each successful sign-up, you'll move up
+                  the waitlist, getting you closer to unlocking Kaamyaab's
+                  powerful career tools sooner.
+                </p>
+              </div>
+            </div>
+          </section>
+        </article>
       </div>
     </section>
-
+    <section class="intro2" aria-label="Introduction">
+      <div class="intro__container">
+        <h1 class="intro__title">
+          Launch Your <span class="cyan">Career</span>
+        </h1>
+        <p class="intro__paragraph">
+          Join <span class="cyan">Pakistan's #1 </span> job board for
+          students, where top talent meets top companies.
+        </p>
+        <div class="intro__action">
+          <a class="intro__button" onclick="togglePopup()" href="./signup.html" target="_blank" style="width: auto">
+            Join Waitlist</a>
+        </div>
+      </div>
+    </section>
   </main>
 
-
   <!-- Aside Reviews -->
-  <aside class="review" aria-label="reviews">
+  <!-- <aside class="review" aria-label="reviews">
     <div class="review__wrapper">
 
       <div class="card">
@@ -214,15 +368,13 @@
       </div>
 
     </div>
-  </aside>
-
+  </aside> -->
 
   <!-- Footer -->
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <div class="footer__wrapper">
-
       <!-- Sign Up -->
-      <section class="signup" aria-label="Sign up">
+      <!-- <section class="signup" aria-label="Sign up">
         <h2 class="signup__title">Get early access today</h2>
         <p class="signup__paragraph">
           It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions,
@@ -237,39 +389,39 @@
           </div>
           <button class="button--submit">Get Started For Free</button>
         </form>
-      </section>
+      </section> -->
 
       <!-- Clear -->
       <div class="clear-absolute"></div>
 
       <!-- Logo -->
       <div class="image-wrapper">
-        <img src="./images/logo.svg" alt="Fylo Logo" title="Fylo Logo" class="image-wrapper__img" />
+        <a href="/" class="navtop__brandlink">
+          <span class="cyan">Kaamyaab</span></a>
       </div>
 
       <!-- Contact -->
       <div class="contact">
-
         <section class="location" aria-label="Location">
           <div class="box-contact">
             <img src="./images/icons/icon-location.svg" alt="" title="Our Location" class="box-contact__icon" />
             <p class="box-contact__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua
+              <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua -->
+              Islamabad, Karachi, Riyadh
             </p>
           </div>
         </section>
         <section class="contact-us" aria-label="Contact us">
-          <div class="box-contact">
+          <!-- <div class="box-contact">
             <img src="./images/icons/icon-phone.svg" alt="" title="Phone Number" class="box-contact__icon" />
-            <p class="box-contact__text">
-              +1-543-123-4567
-            </p>
-          </div>
+            <p class="box-contact__text">+1-543-123-4567</p>
+          </div> -->
           <div class="box-contact">
             <img src="./images/icons/icon-email.svg" alt="" title="Email" class="box-contact__icon" />
             <p class="box-contact__text">
-              example@fylo.com
+              <a href="mailto:hello@kaamyaab.pk" style="color: inherit;text-decoration: none;">
+                hello@kaamyaab.pk</a>
             </p>
           </div>
         </section>
@@ -278,7 +430,7 @@
             <li class="navlist__menu-item">
               <a href="#" class="navlist__link">About Us</a>
             </li>
-            <li class="navlist__menu-item">
+            <!-- <li class="navlist__menu-item">
               <a href="#" class="navlist__link">Jobs</a>
             </li>
             <li class="navlist__menu-item">
@@ -286,13 +438,15 @@
             </li>
             <li class="navlist__menu-item">
               <a href="#" class="navlist__link">Blog</a>
-            </li>
+            </li> -->
           </ul>
         </nav>
         <nav class="navinfo" aria-label="Information Navigation">
           <ul class="navlist">
             <li class="navlist__menu-item">
-              <a href="#" class="navlist__link">Contact Us</a>
+              <a href="mailto:hello@kaamyaab.pk" class="navlist__link">
+                Contact Us
+              </a>
             </li>
             <li class="navlist__menu-item">
               <a href="#" class="navlist__link">Terms</a>
@@ -306,59 +460,55 @@
           <ul class="navsocial__menu">
             <li class="navsocial__menu-item">
               <a href="#" class="navsocial__link" aria-label="Visit our Facebook">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3333 3333" shape-rendering="geometricPrecision"
-                  text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
-                  clip-rule="evenodd" class="navsocial__link-icon">
-                  <path d=" M1667 0c460 0 877 187 1179 488 302 302 488 718 488 1179 0 460-187 877-488 1179-302 302-718
-                  488-1179 488-460 0-877-187-1179-488C186 2544 0 2128 0 1667c0-460 187-877 488-1179C790 186 1206 0 1667
-                  0zm181 1137h301V776h-301c-232 0-421 189-421
-                  421v181h-241v361h241v963h361v-963h301l60-361h-361v-181c0-33 28-60
-                  60-60zm913-563c-280-280-666-453-1093-453S854 294 575 574c-280 280-453 666-453 1093s173 814 453
-                  1093c280 280 666 453 1093 453s814-173 1093-453c280-280 453-666 453-1093s-173-814-453-1093z"
-                    fill-rule="nonzero" />
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" shape-rendering="geometricPrecision"
+                  text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" class="navsocial__link-icon">
+                  <path d="M448 56.7v398.5c0 31.3-25.4 56.8-56.7 56.8H56.7C25.4 512 0 486.5 0 455.2V56.7C0 25.4 25.4 0 56.7 0h334.6C422.6 0 448 25.4 448 56.7zM248.6 448V280.9h56.5l8.5-65.7h-65V177c0-19 5-32 31.2-32h33.4V89c-5.8-.8-25.7-2.5-48.8-2.5-48.3 0-81.3 29.4-81.3 83.4v46.6h-54.6v65.7h54.6V448h66.1z"/>
                 </svg>
-              </a>
+              </a>              
             </li>
             <li class="navsocial__menu-item">
-              <a href="#" class="navsocial__link" aria-label="Follow our Twitter">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3333 3333" shape-rendering="geometricPrecision"
+              <a href="https://www.linkedin.com/company/kaamyaab-pk/" class="navsocial__link" aria-label="Check our LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" shape-rendering="geometricPrecision"
                   text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
                   clip-rule="evenodd" class="navsocial__link-icon">
                   <path
-                    d="M1667 0c460 0 877 187 1179 488 302 302 488 718 488 1179 0 460-187 877-488 1179-302 302-718 488-1179 488-460 0-877-187-1179-488C186 2544 0 2128 0 1667c0-460 187-877 488-1179C790 186 1206 0 1667 0zm867 1129c-64 29-132 47-204 56 74-44 130-114 157-197-69 41-145 70-226 86-65-69-157-112-260-112-197 0-356 159-356 356 0 28 3 55 9 81-296-15-558-157-733-372-31 54-48 116-48 179 0 123 63 232 158 296-58-2-113-18-161-44v4c0 172 123 316 286 349-30 8-61 13-94 13-23 0-45-2-67-6 46 141 177 244 332 247-122 96-275 152-442 152-29 0-57-2-85-5 158 101 345 160 546 160 654 0 1013-542 1013-1013 0-16 0-31-1-46 70-50 130-112 177-184zm226-555c-280-280-666-453-1093-453S853 294 574 574c-280 280-453 666-453 1093s173 814 453 1093c280 280 666 453 1093 453s814-173 1093-453c280-280 453-666 453-1093s-173-814-453-1093z"
-                    fill-rule="nonzero" />
+                    d="M100.28 448H7.4V149.1h92.88zm-46.44-340.2c-30.6 0-55.4-24.8-55.4-55.4s24.8-55.4 55.4-55.4c30.6 0 55.4 24.8 55.4 55.4s-24.8 55.4-55.4 55.4zm394.32 340.2h-92.88V302.4c0-34.8-12.6-58.6-44.12-58.6-24.07 0-38.37 16.2-44.62 31.8-2.28 5.6-2.84 13.4-2.84 21.2v151.2H169.4c1.2-245.8 0-270.6 0-270.6h92.88v38.4c-0.2 0.2-0.4 0.4-0.4 0.6h0.4v-0.6c12.32-19 34.32-46.2 83.32-46.2 60.92 0 106.72 39.8 106.72 125.2zm-194.32-57c0-12.6 0.24-25.2 0.56-37.8h-0.8v0.4c1.08-2.2 2.56-4.4 3.72-6.6z" />
                 </svg>
               </a>
             </li>
+            
             <li class="navsocial__menu-item">
-              <a href="#" class="navsocial__link" aria-label="Check our Instagram">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3333 3333" shape-rendering="geometricPrecision"
-                  text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
-                  clip-rule="evenodd" class="navsocial__link-icon">
-                  <path
-                    d="M1662 1174c285 0 516 231 516 516s-231 516-516 516-516-231-516-516 231-516 516-516zm-385-421h780c293 0 532 237 532 525v778c0 289-239 525-532 525h-780c-293 0-532-236-532-525v-778c0-289 240-525 532-525zm884 349c46 0 84 37 84 84 0 46-37 84-84 84-46 0-84-37-84-84 0-46 37-84 84-84zm-820-200h652c245 0 445 199 445 443v656c0 244-200 443-445 443h-652c-245 0-445-199-445-443v-656c0-244 200-443 445-443zM1667 0c460 0 877 187 1179 488 302 302 488 718 488 1179 0 460-187 877-488 1179-302 302-718 488-1179 488-460 0-877-187-1179-488C186 2544 0 2128 0 1667c0-460 187-877 488-1179C790 186 1206 0 1667 0zm1093 573c-280-280-666-453-1093-453S853 293 574 573c-280 280-453 666-453 1093s173 814 453 1093c280 280 666 453 1093 453s814-173 1093-453c280-280 453-666 453-1093s-173-814-453-1093zm-1098 774c188 0 341 153 341 341s-153 341-341 341c-189 0-341-153-341-341s153-341 341-341z" />
+              <a href="https://www.instagram.com/kaamyaab.pk/" class="navsocial__link" aria-label="Visit our Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" shape-rendering="geometricPrecision"
+                  text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" class="navsocial__link-icon">
+                  <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9 114.9-51.3 114.9-114.9-51.3-114.9-114.9-114.9zm0 188.2c-40.4 0-73.2-32.8-73.2-73.2s32.8-73.2 73.2-73.2 73.2 32.8 73.2 73.2-32.8 73.2-73.2 73.2zm146.4-194.2c0 14.1-11.4 25.5-25.5 25.5-14.1 0-25.5-11.4-25.5-25.5s11.4-25.5 25.5-25.5c14.1 0 25.5 11.4 25.5 25.5zm76.1 25.5c-1.7-35.7-9.8-67.3-35.7-93.1s-57.4-34-93.1-35.7c-36.8-2.1-147.4-2.1-184.2 0-35.7 1.7-67.3 9.8-93.1 35.7s-34 57.4-35.7 93.1c-2.1 36.8-2.1 147.4 0 184.2 1.7 35.7 9.8 67.3 35.7 93.1s57.4 34 93.1 35.7c36.8 2.1 147.4 2.1 184.2 0 35.7-1.7 67.3-9.8 93.1-35.7s34-57.4 35.7-93.1c2.1-36.8 2.1-147.4 0-184.2zm-48.3 219.3c-7.6 19.2-22.9 34.5-42.1 42.1-29.1 11.6-97.8 8.9-130.2 8.9s-101.1 2.6-130.2-8.9c-19.2-7.6-34.5-22.9-42.1-42.1-11.6-29.1-8.9-97.8-8.9-130.2s-2.6-101.1 8.9-130.2c7.6-19.2 22.9-34.5 42.1-42.1 29.1-11.6 97.8-8.9 130.2-8.9s101.1-2.6 130.2 8.9c19.2 7.6 34.5 22.9 42.1 42.1 11.6 29.1 8.9 97.8 8.9 130.2s2.7 101.1-8.9 130.2z" />
                 </svg>
               </a>
+              
             </li>
           </ul>
         </nav>
-
       </div>
 
       <!-- Attribution -->
       <section class="attribution" aria-label="Attribution">
-        <p class="attribution__paragraph">
-          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer"
-            class="attribution__link">Frontend Mentor</a>.
-          Coded by <a href="https://github.com/cholis04" target="_blank" rel="noopener noreferrer"
-            class="attribution__link">cholis04</a>.
-        </p>
+        <p class="attribution__paragraph">Copyright © 2024 Kaamyaab.pk</p>
       </section>
-
     </div>
   </footer>
 
+  <script>
+    // Capture the referral link and store it in local storage
+    localStorage.setItem("referral_link", window.location.href);
 
+
+    window.addEventListener("load", function () {
+      if (window.location.hash) {
+        window.location.hash = ""; // Clear the hash
+        window.location.href = "/"; // Redirect to the landing page
+      }
+    });
+  </script>
 </body>
 
 </html>
